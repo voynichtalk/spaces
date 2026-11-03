@@ -123,7 +123,7 @@ async function welcome(){
     <div id="prior"></div>
     ${isClosed()
       ? `<p><b>The study has closed.</b> Results were collected until Sunday 8 November 2026. You are welcome to try the test to see what it was about, but your answers are no longer saved or counted.</p>`
-      : `<p class="fine">Open for contributions until Sunday 8 November 2026 (end of the day, Belgian time).</p>`}
+      : `<p class="fine">Open for contributions until Sunday 8 November 2026 (end of the day, CET).</p>`}
     <button class="btn" id="go" autofocus>${isClosed() ? 'Try it anyway' : 'Start'}</button>`);
   document.getElementById('go').onclick = background;
   const prev = await existing();
